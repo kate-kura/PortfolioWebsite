@@ -1,22 +1,31 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet"/>
+
+    <link rel="stylesheet" href="../css/style.css" />
     <title>Document</title>
   </head>
   <body>
     <header>
-      <a href=""><img src="../static/Logo-2.svg" alt="" /></a>
-      <nav>
-        <ul>
-          <li><a href="">обо мне</a></li>
-          <li><a href="">навыки</a></li>
-          <li><a href="">проекты</a></li>
-          <li><a href="">свяжитесь со мной</a></li>
-        </ul>
-      </nav>
-      <button>резюме<img src="../static/download.svg" alt="" /></button>
+      <div class="header-container">
+        <div class="flex-header-wrapper">
+            <a href=""><img src="../static/Logo-2.svg" alt="" /></a>
+        <nav>
+          <ul>
+            <li><a class="header-nav-a-left" href="">about me</a></li>
+            <li><a href="">skills</a></li>
+            <li><a href="">projects</a></li>
+            <li><a class="header-nav-a-right" href="">contact me</a></li>
+          </ul>
+        </nav>
+        <button class="resume-button">resume<img class="resume-button-icon" src="../static/download-2.svg" alt="" /></button>
+        </div>
+      </div>
     </header>
 
     <main></main>
