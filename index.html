@@ -16,7 +16,7 @@
   <body>
     <header>
       <div class="header-container">
-        <div class="flex-header-wrapper">
+        <div class="flex-wrapper">
           <a href=""><img src="static/Logo-2.svg" alt="" /></a>
           <nav>
             <ul>
@@ -26,9 +26,10 @@
               <li><a class="header-nav-a-right" href="">contact me</a></li>
             </ul>
           </nav>
-          <button class="resume-button">
-            resume<img
-              class="resume-button-icon"
+          <button class="header-resume-button">
+            resume
+            <img
+              class="header-resume-button-icon"
               src="static/download-2.svg"
               alt=""
             />
@@ -38,35 +39,56 @@
     </header>
 
     <main>
-      <section class="container">
-        <h1>hello i’am kate kuragina. frontend developer based in russia.</h1>
-        <p>
-          I'm Kate. Lorem Ipsum is simply dummy text of the printing and
-          typesetting industry. Lorem Ipsum has been the industry's standard
-          dummy text ever since the 1500s, when an unknown printer took a galley
-          of type and scrambled it to specimen book.
-        </p>
+      <section class="main-container">
+        <div class="flex-wrapper">
+          <div class="main-info">
+            <div>
+              <h1 class="title">
+                hello i’am <span class="title-extra-bold">kate.</span><br /><span
+                  class="title-extra-bold"
+                  >frontend</span
+                >
+                <span class="title-outlined-extra-bold">developer</span
+                ><br />based in <span class="title-extra-bold">russia.</span>
+              </h1>
+              <p class="paragraph" class="main-paragraph">
+                I'm Kate Kuragina Lorem Ipsum is simply dummy text of the printing
+                and typesetting industry. Lorem Ipsum has been the industry's
+                standard dummy text ever since the 1500s, when an unknown printer
+                took a galley of type and scrambled it to specimen book.
+              </p>
+            </div>
 
-        <ul>
-          <li>
-            <button><img src="" alt="" /></button>
-          </li>
-          <li>
-            <button><img src="" alt="" /></button>
-          </li>
-          <li>
-            <button><img src="" alt="" /></button>
-          </li>
-          <li>
-            <button><img src="" alt="" /></button>
-          </li>
-        </ul>
+            <ul class="main-flex-button-wrapper">
+              <li>
+                <button class="link-button">
+                  <img src="static/icons8-telegram.svg" alt="" />
+                </button>
+              </li>
+              <li>
+                <button class="link-button">
+                  <img src="static/icons8-github.svg" alt="" />
+                </button>
+              </li>
+              <li>
+                <button class="link-button">
+                  <img src="static/icons8-vk.svg" alt="" />
+                </button>
+              </li>
+              <li>
+                <button class="link-button">
+                  <img src="static/icons8-instagram.svg" alt="" />
+                </button>
+              </li>
+            </ul>
+          </div>
 
-        <img src="static/girl banner 1.svg" alt="" />
+          <img class="main-img" src="static/girl banner 1.svg" alt="" />
+        </div>
       </section>
 
       <section class="container">
-        <h1>my skills</h1>
+        <h1 class="title">my skills</h1>
         <div class="card-flex-wrapper">
           <div class="card">
             <img class="card-img" src="" alt="" />
@@ -108,14 +130,12 @@
             <img class="card-img" src="" alt="" />
             <h5>git</h5>
           </div>
-
         </div>
       </section>
 
-      <section class="container" class="black-background">
-        <h1>my experience</h1>
+      <section class="container">
+        <h1 class="title">my experience</h1>
       </section>
-
     </main>
 
     <footer></footer>
