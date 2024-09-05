@@ -319,6 +319,32 @@ header a {
   gap: 20px;
 }
 
+/* my projects */
+.my-projects-flex-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+}
+.my-projects-flex-wrapper div {
+  gap: 40px;
+}
+.reverse {
+  flex-direction: row-reverse;
+}
+
+.my-projects-info-flex-wrapper {
+  display: flex; 
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 28px;
+}
+.my-projects-info-flex-wrapper h2 {
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
 
 
 
