@@ -26,6 +26,13 @@ body {
   justify-content: space-between;
   align-items: center;
 }
+.gap-flex-wrapper {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+}
 
 ul {
   list-style: none;
@@ -45,7 +52,7 @@ button {
 }
 
 .center-title {
-  margin: 20px 0;
+  padding: 20px 0;
   text-align: center;
 }
 
@@ -185,7 +192,6 @@ header a {
 
 /* skills */
 .card-flex-wrapper {
-  margin-top: 20px;
   padding: 20px 0;
   display: flex;
   flex-wrap: wrap;
@@ -299,34 +305,17 @@ header a {
 }
 
 /* about me */
-
-.about-me-info-flex-wrapper {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-
+.about-me-info{
   margin-left: 80px;
   text-align: left;
 }
 
-.about-me-info-flex-wrapper h1 {
+.about-me-info h1 {
   padding: 20px 0;
-}
-.about-me-info-flex-wrapper div {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  gap: 20px;
 }
 
 /* my projects */
-.my-projects-flex-wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  gap: 20px;
-}
-.my-projects-flex-wrapper div {
+.my-projects div {
   gap: 40px;
 }
 .reverse {
@@ -346,7 +335,101 @@ header a {
   text-transform: capitalize;
 }
 
+/* my testimonial */
+.my-testimonial {
+  gap: 30px;
+  padding: 40px 24px;
+}
 
+.my-testimonial-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  border-radius: 20px;
+  padding: 40px 40px;
+
+  text-align: center;
+  background-color: #ffffff;
+  transition: background-color 0.3s ease;
+
+  box-shadow: 0px 6px 8px -6px rgba(24, 39, 75, 0.42);
+  box-shadow: 0px 8px 16px -6px rgba(24, 39, 75, 0.28);
+}
+
+.my-testimonial-card div {
+  position: relative;
+  width: 96px;
+  height: 96px;
+}
+.image-bottom {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.image-top {
+  position: absolute;
+  top: 66px;
+  left: 66px;
+  filter: invert(0);
+  transition: filter 0.3s ease;
+}
+
+.my-testimonial-card p {
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.02em;
+  font-weight: 400;
+  color: #404040;
+  transition: color 0.3s ease;
+}
+
+.my-testimonial-card hr {
+  background-color: #000000;
+  height: 2px;
+  width: 120px;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.my-testimonial-card h5 {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 600px;
+  text-transform: capitalize;
+  color: #404040;
+  transition: color 0.3s ease;
+}
+
+.my-testimonial-card h6 {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 600px;
+  text-transform: capitalize;
+  color: #71717A;
+  transition: color 0.3s ease;
+}
+.my-testimonial-card:hover {
+  background-color: #000000;
+}
+.my-testimonial-card:hover p{
+  color: #ffffff;
+}
+.my-testimonial-card:hover hr{
+  background-color: #ffffff;
+}
+.my-testimonial-card:hover h5{
+  color: #ffffff;
+}
+.my-testimonial-card:hover h6{
+  color: #ffffff;
+}
+.my-testimonial-card:hover .image-top {
+  filter: invert(1);
+}
 
 .footer-container {
   padding: 0 32px;
