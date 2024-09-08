@@ -320,7 +320,7 @@
               I recently had to jump on 10+ different calls across eight
               different countries to find the right owner.
             </p>
-            <hr/>
+            <hr />
             <h5>Evren Shah</h5>
             <h6>Designer</h6>
           </div>
@@ -356,15 +356,15 @@
       </section>
 
       <!-- contact section -->
-      <section class="container">
-        <div>
-          <div>
-            <input type="text" />
-            <input type="text" />
-            <input type="text" />
-            <input type="text" />
-            <div>
-              <button>Get In Touch</button>
+      <section class="container contact">
+        <div class="flex-wrapper">
+          <div class="input-area contact-flex-wrapper">
+            <input type="text" placeholder="Your name" />
+            <input type="text" placeholder="Email"/>
+            <input type="text" placeholder="Your website (If exists)"/>
+            <textarea class="large" rows="4" cols="50" wrap="soft" placeholder="How can I help?*"></textarea>
+            <div class="contact-button-flex-wrapper">
+              <button class="contact-button">Get In Touch</button>
 
               <ul class="contact-button-flex-wrapper">
                 <li>
@@ -407,13 +407,18 @@
             </div>
           </div>
 
-          <div>
-            <h1 class="title">lets talk for smth special</h1>
-            <p>
-              I seek to push the limits of creativity to create high-engaging,
-              user-friendly, and memorable interactive experiences.
-            </p>
-            <h3>Youremail@gmail.com<br />1234567890</h3>
+          <div class="text-area contact-flex-wrapper">
+            <div>
+              <h1 class="title title-extra-bold">Let's <span class="title-outlined-extra-bold">talk</span> for<br>Something special</h1>
+              <p class="paragraph">
+                I seek to push the limits of creativity to create high-engaging,
+                user-friendly, and memorable interactive experiences.
+              </p>
+            </div>
+            <div>
+              <h3>Youremail@gmail.com</h3>
+              <h3>1234567890</h3>
+            </div>
           </div>
         </div>
       </section>
@@ -424,7 +429,10 @@
         <div class="footer-container white">
           <div class="flex-wrapper">
             <a href=""><img src="static/Frame16.svg" alt="" /></a>
-            <p>@ 2019-2023 Personal<br />Made In Figma</p>
+            <div class="footer-text">
+              <p>@ 2019-2023 Personal</p>
+              <p>Made In Figma</p>
+            </div>
           </div>
         </div>
       </section>
